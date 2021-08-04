@@ -1,5 +1,27 @@
 ---
 ---
+$base-color-left: white;
+$front-color-left: black;
+$base-color-right: black;
+$front-color-right: white;
+
+@keyframes colorchange
+    {
+      0%   {background: rgb(40,80,120); }
+      33%  {background: rgb(80,120,60); }
+      66%  {background: rgb(250,150,30); }
+      100% {background: rgb(180,120,140); }
+   }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: rgb(40,80,120); }
+      33%  {background: rgb(80,120,60); }
+      66%  {background: rgb(250,150,30); }
+      100% {background: rgb(180,120,140); }
+   }
+
+
 @import "uno";
 @import "tables";
 @import "monokai";
@@ -54,6 +76,6 @@ pre.highlight code,
   position: relative;
   width: 100px;
   height: 100px;
-  border: 3px solid #fff;
+  border: 3px solid $front-color-right;
   border-radius:100%;
 }

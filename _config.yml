@@ -1,8 +1,8 @@
 # Site settings
 title: The Play Studio
 description: 'A play-full approach to therapy'
-url: 'https://www.theplaystduio.com.au'
-baseurl: '/jekyll-uno'
+url: 'https://cam-l.github.io/jekyll-uno'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 # disable_landing_page: true

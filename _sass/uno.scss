@@ -12,6 +12,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit;
 	vertical-align: baseline; }
 
+small {
+	font-size: 0.5em; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block; }
@@ -21,7 +24,7 @@ body {
 	animation: colorchange 300s linear 1s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
       -webkit-animation: colorchange 60s linear 0s infinite alternate; /* Chrome and Safari */
-	background-color: $base-color-right;}
+	}
 
 ol, ul {
 	list-style: none; }
@@ -941,9 +944,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: #e25440; }
+	font-weight: bolder;
+	color: $front-color-right; }
 	a:hover {
-		color: #b9301c;
+		mix-blend-mode: difference;
+		//color: #b9301c;
 		-o-transition: .5s;
 		-ms-transition: .5s;
 		-moz-transition: .5s;
@@ -988,7 +993,7 @@ p {
 	line-height: 1.7em; }
 
 strong {
-	font-weight: bold; }
+	font-weight: bolder; }
 
 em {
 	font-style: italic; }
@@ -996,8 +1001,8 @@ em {
 blockquote {
 	margin: 1em 0;
 	padding: 2em 0;
-	background: #f8f8f8;
-	border: 1px solid #eeeeee;
+	background: $base-color-right;
+	border: 1px solid $base-color-left;
 	border-radius: 3px;
 	font-family: "Quicksand", serif;
 	font-weight: lighter;
@@ -1023,8 +1028,8 @@ ul {
 
 code {
 	padding: .1em .4em;
-	background: #e8f2fb;
-	border: 1px solid #c9e1f6;
+	background: $base-color-right;
+	border: 1px solid $front-color-right;
 	border-radius: 2px;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	font-size: .85em; }
@@ -1054,12 +1059,14 @@ pre {
 	.time a,
 	.author a,
 	.tags a {
-		color: #666666; }
+		color: adjust-color($front-color-right, $alpha: -0.5); }
 		.date a:hover,
 		.time a:hover,
 		.author a:hover,
 		.tags a:hover {
-			color: #b9301c; }
+			mix-blend-mode: difference;
+			//color: #b9301c; 
+		}
 
 .excerpt {
 	margin: 0;
@@ -1080,7 +1087,7 @@ pre {
 	position: relative;
 	bottom: -15px;
 	font-size: .8em;
-	font-weight: bold;
+	font-weight: bolder;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1px; }
@@ -1089,10 +1096,11 @@ pre {
 	position: relative;
 	display: inline-block;
 	padding: 8px 18px 9px 18px;
-	background: #e25440;
+	background: $color-link;
+	font-weight:bolder;
 	border-radius: 2px;
 	text-align: center;
-	color: #FFF; }
+	color: $front-color-right; }
 
 .container {
 	position: relative;
@@ -1124,7 +1132,9 @@ pre {
 		color: adjust-color($front-color-right, $alpha: -0.5);
 		text-decoration: underline; }
 		.footer__copyright a:hover {
-			color: #b9301c; }
+			mix-blend-mode: difference;
+			//color: #b9301c; 
+		}
 
 .avatar,
 .logo {
@@ -1138,7 +1148,7 @@ hr {
 .section-title__divider {
 	width: 30%;
 	margin: 2.2em 0 2.1em 0;
-	border-top: 1px solid adjust-color($front-color-right, $alpha: -0.5); }
+	border-top: 1px solid adjust-color($front-color-right, $alpha: -0.75); }
 
 .hidden {
 	display: none !important; }
@@ -1179,7 +1189,7 @@ hr {
 	display: block;
 	width: 30%;
 	margin: 2em 0;
-	border-top: 1px solid adjust-color($front-color-right, $alpha: -0.5); }
+	border-top: 1px solid adjust-color($front-color-right, $alpha: -0.25); }
 
 .error-code {
 	font-size: 6em; }
@@ -1252,7 +1262,7 @@ hr {
 .panel-cover__divider {
 	width: 50%;
 	margin: 20px auto;
-	border-top: 1px solid adjust-color($front-color-left, $alpha: -0.66); }
+	border-top: 1px solid adjust-color($front-color-left, $alpha: -0.75); }
 
 .panel-cover__divider--secondary {
 	width: 15%; }
@@ -1291,7 +1301,7 @@ hr {
 	color: $front-color-left;
 	text-shadow: 0 1px 1px $base-color-left; }
 	.panel-inverted a {
-		color: adjust-color($front-color-left, $alpha: -0.5); }
+		color: adjust-color($front-color-left, $alpha: -0.25); }
 
 .cover-navigation {
 	margin-top: 10px; }
@@ -1324,13 +1334,13 @@ hr {
 
 .btn, .navigation__item a {
 	padding: 10px 20px;
-	border: 1px solid #e25440;
+	border: 1px solid adjust-color($front-color-left, $alpha: -0.5);
 	border-radius: 20px;
 	font-size: .9em;
-	font-weight: bold;
+	font-weight: bolder;
 	letter-spacing: 1px;
 	text-shadow: none;
-	color: #e25440;
+	color: $color-link;
 	-webkit-font-smoothing: antialiased; }
 	.btn:hover, .navigation__item a:hover {
 		color: #b9301c;
@@ -1367,8 +1377,8 @@ hr {
 	left: 0;
 	width: 100%;
 	height: 42px;
-	background: rgba(0, 0, 0, 0.40);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	background: adjust-color($front-color-left, $alpha: -0.75);
+	border-bottom: 1px solid $base-color-left;
 	text-align: center; }
 
 .btn-mobile-menu__icon,
@@ -1376,7 +1386,7 @@ hr {
 	position: relative;
 	top: 2px;
 	font-size: 36px;
-	color: #FFF; }
+	color: $base-color-left; }
 
 nav {
 	display: inline-block;
@@ -1457,9 +1467,11 @@ i {
 	font-size: 1.5em;
 	line-height: 1.3em; }
 	.post-list__post-title a {
-		color: adjust-color($front-color-right, $alpha: -0.5); }
+		color: adjust-color($front-color-right, $alpha: -0.25); }
 		.post-list__post-title a:hover {
-			color: #b9301c; }
+			mix-blend-mode: difference;
+			//color: #b9301c;
+		}
 
 .post-list__meta {
 	display: block;
@@ -1477,7 +1489,7 @@ i {
 .post-list__divider {
 	width: 30%;
 	margin: 2.2em 0 2.1em 0;
-	border-top: 1px solid adjust-color($front-color-right, $alpha: -0.5); }
+	border-top: 1px solid adjust-color($front-color-right, $alpha: -0.75); }
 
 *:focus {
 	outline: none; }
@@ -1647,8 +1659,8 @@ input[type="tel"] {
 		left: 0;
 		width: 100%;
 		padding: 20px 0;
-		background: rgba(51, 51, 51, 0.98);
-		border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+		background-color: adjust-color($front-color-left, $alpha: -0.75);
+		border-bottom: 1px solid $base-color-left; }
 		.navigation-wrapper.visible {
 			display: block; }
 

@@ -10,5 +10,5 @@ You can find us at:
 264 St Kilda Road,\\
 St Kilda Vic 3182
 
-![Map of St Kilda]({{ site.baseurl }}/images/toner_COSm5dN83lw.png "Find us here!")\\
+![Map of St Kilda]({{ site.baseurl }}/assets/images/toner_COSm5dN83lw.png "Find us here!")\\
 [Google Map](https://goo.gl/maps/vEPK2ZN4sUWCqQ4G6)

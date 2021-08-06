@@ -4,12 +4,12 @@
 </span>
 
 <header class="panel-cover {% if site.disable_landing_page %}panel-cover--collapsed{% endif %}"
-  style="background-image: url({{ site.baseurl }}/assets/images/cover.jpg)">
+  style="background-image:none">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
-        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+        <a href="{{ site.url }}{{ site.baseurl }}/" title="link to home of {{ site.title }}">
           <img src="{{ site.baseurl }}/assets/images/logo.png" class="panel-logo" alt="{{ site.title }}">
           <!-- <h1 class="panel-cover__title panel-title">{{ site.title }}</h1> -->
         </a>

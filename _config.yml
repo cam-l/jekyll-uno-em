@@ -1,8 +1,8 @@
 # Site settings
 title: The Play Studio
 description: 'A play-full approach to therapy'
-url: 'https://cam-l.github.io/jekyll-uno-em'
-baseurl: ''
+url: 'https://cam-l.github.io'
+baseurl: '/jekyll-uno-em'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 # disable_landing_page: true
@@ -29,6 +29,7 @@ paginate: 10
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
+encoding: UTF-8
 
 sass:
     sass_dir: _sass
@@ -40,5 +41,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+plugins: ['jekyll-paginate', 'jekyll-feed']
+exclude: ['README.md', 'screenshot.png', 'docker-compose.yml']

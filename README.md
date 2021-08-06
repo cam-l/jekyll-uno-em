@@ -1,4 +1,8 @@
-# jekyll-uno
+# jekyll-uno-em
+
+This website is based on and forked from the following theme.
+
+## Jekyll-Uno
 
 Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 

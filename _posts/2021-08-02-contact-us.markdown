@@ -5,5 +5,6 @@ categories: [Info]
 tags: [info]
 ---
 Email us or give us a call:\\
+Dr Emma van Daal\\
 [hello@theplaystudio.com.au](mailto:hello@theplaystudio.com.au)\\
 0492 180 875

@@ -1,6 +1,6 @@
 # jekyll-uno-em
 
-This website is based on and forked from the following theme.
+This website is based on, and forked from the following theme.
 
 ## Jekyll-Uno
 

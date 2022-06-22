@@ -1,6 +1,6 @@
 ---
 title:  "About Emma"
-date:   2022-06-03 15:00:00
+date:   2022-06-02 15:00:00
 categories: [Info]
 tags: [info]
 ---

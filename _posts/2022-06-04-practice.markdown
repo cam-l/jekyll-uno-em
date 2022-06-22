@@ -1,6 +1,6 @@
 ---
 title:  "The Practice"
-date:   2022-06-01 15:00:00
+date:   2022-06-04 15:00:00
 categories: [Info]
 tags: [info]
 ---

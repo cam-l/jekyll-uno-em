@@ -1,0 +1,10 @@
+---
+title:  "Where are we?"
+date:   2022-06-02 15:00:00
+categories: [Info]
+tags: [info]
+---
+You can find The Melbourne Play Studio at:\\
+[264 St Kilda Road, St Kilda Vic 3182](https://goo.gl/maps/vEPK2ZN4sUWCqQ4G6)
+
+![Map of St Kilda]({{ site.baseurl }}/assets/images/toner_COSm5dN83lw.png "Find us here!")

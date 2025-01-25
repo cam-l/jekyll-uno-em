@@ -947,8 +947,8 @@ a {
 	font-weight: bolder;
 	color: $front-color-right; }
 	a:hover {
-		background-blend-mode: difference;
-		//mix-blend-mode: difference;
+		//background-blend-mode: difference;
+		mix-blend-mode: difference;
 		//color: #b9301c;
 		-o-transition: .5s;
 		-ms-transition: .5s;

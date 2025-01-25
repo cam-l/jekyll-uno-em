@@ -9,11 +9,10 @@ baseurl: ''
 
 author:
   name: 'Dr Emma van Daal'
-  email: hello@theplaystudio.com.au
-  #twitter_username: 
-  facebook_username: melbourneplaystudio
-  #github_username: emmakate
-  #linkedin_username:  dr-emma-van-daal-b4a4281a
+  email: emma@dremmavandaal.au
+  instagram_username: dremma_van_daal
+  github_username: emmakate
+  linkedin_username: dr-emma-van-daal-b4a4281a
 
 defaults:
   -
@@ -22,6 +21,19 @@ defaults:
       type: 'posts'
     values:
         layout: 'post'
+
+collections:
+  bios:
+    sort_by: order
+    order:
+      - qualifications.md
+      - services.md
+      - research.md
+      - projects.md
+      - training.md
+      - conferences.md
+      - publications.md
+    output: true
 
 # Build settings
 destination: _site
